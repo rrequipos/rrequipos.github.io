@@ -1,0 +1,232 @@
+/*=============================
+barousel_demo.css
+v.0.1
+Julien Decaudin - 04/2010
+www.juliendecaudin.com
+=============================*/
+
+/*-------------> BAROUSEL */
+#barousel
+{
+	position:relative;
+	margin-bottom:0px;
+	width: 960px;
+	height: 424px;
+	background-color: #C7232B;
+	border-radius: 5px;
+}
+
+.barousel_image
+{
+	position:absolute;
+	z-index:10;
+	width: 960px;
+	height: 420px;
+	border-radius: 5px;
+}
+
+.barousel_image img
+{
+	position:absolute;
+	display:none;
+	max-height: 420px;
+	max-width: 960px;
+	margin-top: 4px;
+	width: 960px;
+	height: 420px;
+	border-radius: 5px;
+}
+
+.barousel_image img.default
+{
+	display:block;
+}
+
+.barousel_image img.current
+{
+	z-index:10;
+}
+
+.barousel_image img.previous
+{
+	z-index:5;
+}
+
+.barousel_content
+{
+	position:absolute;
+	z-index: 30;
+	color: #000;
+	width: 320px;
+	height: 420px;
+	min-height: 420px;
+	max-height: 420px;
+	right:0px;
+	background-color: rgba(199,35,43,0.7);
+	margin-top: 4px;
+
+}
+
+.barousel_content div
+{
+	display:none;
+}
+
+.barousel_content div.default
+{
+	display:block;
+}
+
+.barousel_content p
+{
+	padding: 20px;
+}
+
+.barousel_content p.header
+{
+	font-size:28px;
+	font-weight:normal;
+	line-height:30px;
+	width: 210px;
+	height: 80px;
+	color:#FFFFFF;
+/* 	text-transform: uppercase; */
+/* 	text-align: center; */
+/* 	text-decoration: underline; */
+	font-size: 22px; 
+	padding: 55px 0px 0px 60px; 
+	font-weight: 400;
+}
+
+.barousel_content p.description {
+	width: 210px;
+	height: 190px;
+	color:#FFFFFF;
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 60px;
+	line-height:26px;
+}
+
+.barousel_content a, .barousel_content a:hover
+{
+	color:#333;
+	background-color:transparent !important;
+}
+
+.barousel_nav
+{
+	position:absolute;
+	padding:2px 2px 0px 0;
+	height:23px;
+	background: transparent;
+	top: 10px;
+	left: 10px;
+	z-index:20;
+	font-weight: lighter;
+	border-radius: 5px;
+}
+
+.barousel_nav .counter
+{
+	float:right;
+	font-size:0.75em;
+	color:#fff;
+	margin:3px 5px 0 0;
+}
+
+.barousel_nav ul
+{
+	float:right;
+	padding:0;
+	margin:0;
+}
+
+.barousel_nav li
+{
+	float:left;
+	padding-left:2px;
+	list-style:none;
+}
+
+.barousel_nav li a
+{
+	display:block;
+	background: #CCCDD2;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration:none;
+	padding: 5px 10px 5px 10px;
+	height: 50px;
+	width: 45px;
+	background-color:rgba(199,35,43,0.6);
+	border-radius: 5px;
+}
+
+.barousel_nav li a:hover
+{
+	background-color:rgba(199,35,43,0.6);
+	font-weight: bold;
+}
+
+.barousel_nav li a.current
+{
+	background-color:rgba(103, 35, 10,0.5);
+}
+
+.barousel_nav li.prev a
+{
+	background-image:url(Flecha1.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+
+.barousel_nav li.next a
+{
+	background-image:url(Flecha2.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+}
+
+.barousel_extra_nav
+{
+	position:absolute;
+	width: 645px;
+	height: 420px;
+	background: transparent;
+	z-index:15;
+	margin-top: 4px;
+	border-radius: 5px;
+}
+
+.barousel_extra_nav div.counter {
+	display:none;
+}
+
+.barousel_extra_nav div.prev {
+	float:left;
+	padding:0;
+	margin:0;
+	margin-top: 195px;
+	margin-left: 10px;
+}
+
+
+
+.barousel_extra_nav div.next {
+	float:right;
+	padding:0;
+	margin:0;
+	margin-top: 195px;
+	margin-right: 10px;
+}
+
+
+.barousel img.ajax_loader
+{
+	display:none;
+	position:absolute;
+	z-index:30;
+	top:70px;
+	left:135px;
+}

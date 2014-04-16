@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="shortcut icon" href="images/favicon.png">
+
+      <title>RREquipos</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/extras.css" rel="stylesheet">
+      <link href="css/jquery.barousel.css" rel="stylesheet">
+      <link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
+      <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="wrapper">
+      <div id="header" class="container">
+        <div id="logo">
+          <h1><a href=""><img src="images/logo.png" class="logo-image"></a></h1>
+        </div>
+        <div id="menu">
+          <ul >
+            <li class="current_page_item"><a href="" accesskey="1" title="">Hogar</a></li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" accesskey="2" title="">Productos y Servicios <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li style="width:100%;text-align:left;"><a href="/camion_fabrica">Camión Fábrica</a></li>
+                <li style="width:100%;text-align:left;"><a href="/equipos_subterraneos">Equipos Subterráneos para Carga de Explosivos</a></li>
+                <li style="width:100%;text-align:left;"><a href="/almacenamientos">Almacenamiento en Explosivos</a></li>
+                <li style="width:100%;text-align:left;"><a href="/silos">Silos</a></li>
+                <li style="width:100%;text-align:left;"><a href="/camion_explosivos">Camión de Deshidratación de Explosivos</a></li>
+                <li style="width:100%;text-align:left;"><a href="/mantenimiento">Mantenimiento en Terreno</a></li>
+                <li style="width:100%;text-align:left;"><a href="/repuestos">Repuestos</a></li>
+              </ul>
+            </li>
+            <li><a href="company.html" accesskey="3" title="">¿Quiénes Somos?</a></li>
+            <li><a href="contact.html" accesskey="4" title="">Contáctenos</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END HEADER -->
+    <br>
+    <!-- BODY -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+        <div id="barousel">
+          <div id="barousel_itemnav" class="barousel">
+            <div class="barousel_image">
+              <img src="images/truck1.jpg" alt="&lt;br/&gt;diagnóstico" class="current" style="display: inline;">
+            
+              <img src="images/truck2.jpg" alt="&lt;br/&gt;implementación" class="" style="display: none;">
+            
+              <img src="images/truck3.jpg" alt="&lt;br/&gt;soporte" class="" style="display: none;">
+            
+              <img src="images/truck4.jpg" alt="&lt;br/&gt;certificación" class="" style="display: none;">      
+            </div>
+            <div class="barousel_content" style="height: 375px;">   
+              <div class="default" style="display: block;">
+                <p class="header"><strong style="font-weight: 400;">CAMIÓN FÁBRICA</strong></p>
+                <p class="description">Vivamus erat mi, vestibulum nec aliquet a, posuere in nibh. Suspendisse gravida neque eu convallis faucibus. Nunc ut quam accumsan, feugiat nulla ut, ultrices diam.</p>
+              </div>
+              <div style="display: none;">
+                <p class="header"><strong style=" font-weight: 400;">SILOS</strong></p>
+                <p class="description">Vivamus erat mi, vestibulum nec aliquet a, posuere in nibh. Suspendisse gravida neque eu convallis faucibus. Nunc ut quam accumsan, feugiat nulla ut, ultrices diam.</p>
+              </div>     
+              <div style="display: none;">
+                <p class="header"><strong style="font-weight: 400;">REPUESTOS</strong></p>
+                <p class="description">Vivamus erat mi, vestibulum nec aliquet a, posuere in nibh. Suspendisse gravida neque eu convallis faucibus. Nunc ut quam accumsan, feugiat nulla ut, ultrices diam.</p>
+              </div>
+              
+              <div style="display: none;">
+                <p class="header"><strong style="font-weight: 400;">ALMACENAMIENTOS</strong></p>
+                <p class="description">Vivamus erat mi, vestibulum nec aliquet a, posuere in nibh. Suspendisse gravida neque eu convallis faucibus. Nunc ut quam accumsan, feugiat nulla ut, ultrices diam.</p>
+              </div>    
+            </div>
+            <div class="barousel_nav">
+            </div>
+            <div class="barousel_extra_nav">
+              <div class="prev"><a href="#" title="previous"></a></div><div class="next"><a href="#" title="next"></a></div><div class="counter"><span class="counter_current">1</span>/<span class="counter_total">4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <footer id="main-footer">
+      <br><br>
+        RREquipos SpA &nbsp; / &nbsp;
+        Santiago - Región Metropolitana - Chile  &nbsp; / &nbsp;
+        pedro.bulnes@rrequipos.com
+      <br>
+      <br>
+    </footer>
+  </div>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.barousel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('#barousel').barousel({navType: 4, slideDuration: 6000});
+        });
+      </script>
+
+  </body>
+</html>
