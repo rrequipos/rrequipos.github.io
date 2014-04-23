@@ -11,6 +11,7 @@
       <title>RREquipos</title>
 
       <!-- Bootstrap core CSS -->
+      <link href="css/smoothzoom.css" rel="stylesheet">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/extras.css" rel="stylesheet">
       <link href="css/jquery.barousel.css" rel="stylesheet">
@@ -57,13 +58,36 @@
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-6">
-              <img src="images/products/camion_fabrica.png" style="width:100%;border-radius:5px;">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/products/camion_fabrica.png" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+                <div class="col-sm-6">
+                  <img src="images/products/camion_fabrica2.png" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/products/camion_fabrica3.png" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+                <div class="col-sm-6">
+                   <img src="images/products/camion_fabrica4.png" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/products/camion_fabrica5.png" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+                <div class="col-sm-6">
+                </div>
+              </div>
             </div>
             <div class="col-sm-6" style="text-align:justify;">
-              Suministramos simplificando la hidráulica y sistemas de control eléctricos. Nuestros sistemas de control son en circuito cerrado y capaz de realizar casi cualquier tarea, y utilizan la última tecnología de "bus CAN" para la comunicación desde el controlador a las válvulas hidráulicas.
-              <br><br> 
-              R & R también puede manejar otros tipos de sistemas de control, si es necesario, nuestro sistema de ingeniería realiza excelente trabajo.
-
+              R & R Equipment es un fabricante de equipos de explosivos, incluidos los equipos de explosivos a granel (móviles y fijos). Camiones de explosivos a granel  “Blend Trucks”. Nuestro sistema de control es una solución de ingeniería que utiliza la última tecnología " CAN bus " para la comunicación desde el controlador a las válvulas hidráulicas. Con nuestro sistema de circuito cerrado somos capaces de realizar casi cualquier tarea. 
+              <br><br>
+              R & R también reconstruye su equipo existente, lo que podría ahorrar hasta un 50% en sus costos de equipo. 
             </div>
           </div>
       </div>
@@ -81,12 +105,14 @@
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.barousel.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/smoothzoom.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-          $('#barousel').barousel({navType: 4, slideDuration: 6000});
+          $('.smooth-image').smoothZoom({
+              // Options go here
+            });
         });
-      </script>
-
+    </script>
   </body>
 </html>
