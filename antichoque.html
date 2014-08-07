@@ -11,6 +11,7 @@
       <title>RREquipos</title>
 
       <!-- Bootstrap core CSS -->
+      <link href="css/smoothzoom.css" rel="stylesheet">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/extras.css" rel="stylesheet">
       <link href="css/jquery.barousel.css" rel="stylesheet">
@@ -59,7 +60,16 @@
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-6">
-              <img src="images/products/updating.png" style="width:100%;border-radius:5px;">
+              <div class="row">
+                <div class="col-sm-6">
+                  <img src="images/products/antichoque1.jpg" style="width:100%; border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+                <div class="col-sm-6">
+                  <img src="images/products/antichoque2.jpg" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                  <br><br>
+                  <img src="images/products/antichoque3.jpg" style="width:100%;border-radius:5px;" class="smooth-image" rel="zoom">
+                </div>
+              </div>
             </div>
             <div class="col-sm-6" style="text-align:justify;">
               R&R Equipos Anti Choque es un sistema de Radio Radar que funciona tanto en operaciones a cielo abierto como subterráneas. Radio Radar es un sistema integral, antiatropello y anticolisión para la seguridad en canteras y minas.
@@ -80,12 +90,14 @@
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.barousel.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/smoothzoom.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-          $('#barousel').barousel({navType: 4, slideDuration: 6000});
+          $('.smooth-image').smoothZoom({
+              // Options go here
+            });
         });
-      </script>
-
+    </script>
   </body>
 </html>
